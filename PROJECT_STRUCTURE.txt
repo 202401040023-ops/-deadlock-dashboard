@@ -1,0 +1,10 @@
+Deadlock Insights Dashboard
+
+frontend/  -> Netlify (Vite/TanStack frontend)
+backend/   -> Render (FastAPI backend)
+
+Deploy backend first, then set VITE_API_BASE_URL in Netlify to the Render service URL.
+Set CORS_ORIGINS in Render to the exact Netlify site origin.
+
+Render blueprint: root render.yaml (service rootDir=backend).
+Netlify config: frontend/netlify.toml.

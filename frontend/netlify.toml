@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
+
+# TanStack Start/Nitro's Netlify preset generates the server-function routing
+# rules. Avoid a blanket index.html rewrite that could bypass SSR/API routes.
