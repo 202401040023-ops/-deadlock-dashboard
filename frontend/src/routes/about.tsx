@@ -14,6 +14,7 @@ export const Route = createFileRoute("/about")({
 
 const team = [
   { name: "Savitri Hargude", roll: "81", prn: "202401040023" },
+  { name: "Sayali Mane", roll: "108", prn: "202401040172" },
   { name: "Oshin Kalbande", roll: "113", prn: "202401040189" },
   { name: "Vedant Jadhav", roll: "121", prn: "202401040231" },
   { name: "Vedanshu Shirode", roll: "125", prn: "202401040255" },
@@ -85,7 +86,7 @@ function AboutPage() {
       <section aria-labelledby="team-heading">
         <div className="mb-4">
           <h2 id="team-heading" className="font-display text-xl font-bold text-foreground">Meet the team</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Four contributors to the DeadlockLab project.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Five contributors to the DeadlockLab project.</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {team.map((member, index) => (
